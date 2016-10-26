@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Huizenmarkt Amsterdam</title>
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <!-- agile, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
+    Download: http://zypopwebtemplates.com/License: Creative Commons Attribution//-->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <script type="text/javascript">
+    /*global $*/
+        $(function(){
+            $('#mainnav li').click(function(){
+                $('#mainnav li').removeClass("selected-item");
+                $(this).addClass("selected-item");
+            }); 
+        });
+    
+    </script>
+</head>
+
+<body>
+
+    <section id="body" class="width">
+        <aside id="sidebar" class="column-left">
+
+            <header>
+                <h1>Huizenmarkt Amsterdam <br>2016</h1>
+
+                <h2>Data Analysis Project</h2>
+
+            </header>
+
+            <nav id="mainnav">
+                <ul>
+                    <li class="selected-item"><a href="#vraagprijs_looptijd">Ontwikkeling Vraagprijs</a></li>
+                    <li><a href="#vergelijking_steden">Vergelijking Steden</a></li>
+                    <li><a href="#prijzen_per_wijk">Prijzen per Wijk</a></li>
+                    <li><a href="#historisch_perspectief">Historisch Perspectief</a></li>
+                    <br>
+                    <hr>
+                    <br>
+                    <li><a href="#bereken_waarde">Bereken Waardestijging</a></li>
+                    <li><a href="#bereken_vraagprijs">Bereken Vraagprijs</a></li>
+                    <li><a href="#vergelijkbare_huizen">Zoek Vergelijkbare Huizen</a></li>
+                </ul>
+            </nav>
+
+
+
+        </aside>
+        <section id="content" class="column-right">
+
+            <article id="vraagprijs_looptijd">
+
+
+                <h2>Ontwikkeling van de Vraagprijs</h2>
+                <p>
+                    - lage hypotheekrente <br>
+                    - huizenprijzen in hele land stijgen <br>
+                    - in grote steden, met name Amsterdam, sprake van oververhitting <br>
+                    - kenmerken: snel stijgende prijzen, doorlijptijd heel laag <br>
+                    - Onderzoeksvraag: is de Amsterdamse woningmarkt oververhit? <br>
+                    - Diagram ppm2/datum, diagram looptijd/datum <br>
+                    - conclusie: signalen van oververhitting. <br>
+                </p>
+            </article>
+
+            <article id="vergelijking_steden">
+
+                <h2>Vergelijking tussen Steden</h2>
+                <p>
+                    - De prijzen in Amsterdam zijn met X procent gestegen  <br>
+                    - Hypothese 1: In het hele land stijgen de prijzen (einde crisis, lage rente)...  <br>
+                    - Hypothese 2: gentrificatie, globalisering ... Amsterdam populair  <br>
+                    - Onderzoeksvraag: is deze snelle prijsstijging specifiek voor Amsterdam  <br>
+                    - Diagram: ppm2/datum Amsterdam, Utrecht, Den Haag, Rotterdam  <br>
+                    - Conclusie: in alle steden stijgen de prijzen, maar snelle prijsstijging  <br>
+                      specifiek voor Amsterdam  <br>
+                </p>
+            </article>
+
+            <article id="prijzen_per_wijk">
+
+                <h2>Prijzen per Wijk</h2>
+                <p>
+                    - Prijzen zijn sterk afhankelijk van locatie  <br>
+                    - Historisch gezien zijn Grachtengordel en Amsterdam Zuid de duurste wijken  <br>
+                    - algemeen: prijzen goedkoper naarmate verder van centrum  <br>
+                    - Onderzoeksvraag: Hoe varieert de vraagprijs over de geographische regionen?  <br>
+                    - Diagram: choropleth ppm2 in Amsterdam  <br>
+                    - Diagram: boxplot ppm2 per regio, i.e. centrum, zuid, ... 
+                    - summary stats: duurste wijk, goedkoopste wijk, ...
+                    - Conclusie: Zuid en grachtengordel zijn het duurst, goedkoper naarmate verder van centrum.  <br>
+                </p>
+            </article>
+            
+            <article id="historisch_perspectief">
+
+                <h2>Historisch Perspectief</h2>
+                <p>
+                    - Conclusie: Prijzen zijn nog nooit zo hoog geweest...
+                </p>
+                <img src="http://www.huizenmarkt-zeepbel.nl/images/huizenprijzen_300jaar.jpg"></img>
+            </article>
+            
+            <article id="bereken_waarde">
+
+                <h2>Bereken de Waardestijging</h2>
+                <p>
+                    Vul de volgende gegevens in:
+                     - vraagprijs 
+                     - koopdatum
+                     - kenmerken
+                     
+                    Bereken de huidige geschatte vraagprijs 
+                    (Visualisatie: Diagram met waarde ontwikkeling)
+                </p>
+            </article>
+            
+            <article id="bereken_vraagprijs">
+
+                <h2>Bereken de Vraagprijs</h2>
+                <p>
+                    Vul de volgende gegevens in:
+                     - postcode
+                     - aantal vierkante meters
+                     - aantal vierkante meters buitenruimte
+                     - ....
+                     
+                     Kies een ML algorithm:
+                     - Linear Regression
+                     - Laszo Regression
+                     - Nearest Neighbours
+                     - ...
+                     
+                     Bereken de vraagprijs.
+                     Toon de ratio van de berekening(?): 
+                </p>
+            </article>
+
+            <article id="vergelijkbare_huizen">
+
+                <h2>Zoek Vergelijkbare Huizen</h2>
+                <p>
+                    Vul de volgende gegevens in:
+                     - vraagprijs 
+                     - kenmerken
+                     
+                    Bereken de huidige geschatte vraagprijs 
+                    (Visualisatie: Kaart en lijst met huizen, url, ...)
+                </p>
+            </article>
+
+            <div id="data_collection_method">
+                <h2>
+                    Methodology
+                </h2>
+                <p>
+                    - Funda data
+                    - statistic relevance: 10
+                    - outliers?
+                    - missing values?
+                    - ...
+                </p>
+            </div>
+
+
+            <footer class="clear">
+                <p>&copy; 2014 sitename. <a href="http://zypopwebtemplates.com/">Free CSS Templates</a> by ZyPOP</p>
+            </footer>
+
+        </section>
+
+        <div class="clear"></div>
+
+    </section>
+
+
+</body>
+
+</html>
