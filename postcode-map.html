@@ -10,8 +10,8 @@
 
     <style>
         #map {
-            width: 500px;
-            height: 500px;
+            width: 800px;
+            height: 800px;
         }
         
         .SvgOverlay {
@@ -29,10 +29,10 @@
         }
         
         .SvgOverlay path {
-            stroke: Black;
-            stroke-width: 2px;
+            stroke: #969696;
+            stroke-width: 1px;
             /*fill: Orange;*/
-            fill-opacity: .3;
+            fill-opacity: .6;
         }
     </style>
 </head>
@@ -56,27 +56,10 @@
             var map = new google.maps.Map($map[0], {
                 zoom: 12,
                 mapTypeId: google.maps.MapTypeId.ROADMAP,
-                center: new google.maps.LatLng(ams_dam_square[1], ams_dam_square[0]), // Mozambique
-                styles: [{
-                    "stylers": [{
-                        "saturation": -20
-                    }, {
-                        "lightness": 20
-                    }]
-                }, {
-                    featureType: 'poi.business',
-                    stylers: [{
-                        visibility: 'off'
-                    }]
-                }, {
-                    featureType: 'transit',
-                    elementType: 'labels.icon',
-                    stylers: [{
-                        visibility: 'off'
-                    }]
-                }]
+                center: new google.maps.LatLng(ams_dam_square[1], ams_dam_square[0]),
+                styles: [{"featureType":"all","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"off"},{"color":"#efebe2"}]},{"featureType":"landscape","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi.attraction","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi.government","elementType":"all","stylers":[{"color":"#dfdcd5"}]},{"featureType":"poi.medical","elementType":"all","stylers":[{"color":"#dfdcd5"}]},{"featureType":"poi.park","elementType":"all","stylers":[{"color":"#bad294"}]},{"featureType":"poi.place_of_worship","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi.school","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"poi.sports_complex","elementType":"all","stylers":[{"color":"#efebe2"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"#fbfbfb"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"transit","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"water","elementType":"all","stylers":[{"color":"#a5d7e0"}]}]
             });
-            d3.json("data/amsterdam-pc4.json", function(geoJson) {
+            d3.json("data/amsterdam-pc4-simplified.json", function(geoJson) {
                 var overlay = new google.maps.OverlayView();
                 overlay.onAdd = function() {
                     var layer = d3.select(this.getPanes().overlayLayer).append("div").attr("class", "SvgOverlay");
@@ -136,7 +119,7 @@
                                         return color(value);
                                     }
                                     else {
-                                        return "#ccc";
+                                        return 'None'; //"#ccc";
                                     }
 
                                 });
