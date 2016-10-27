@@ -1,0 +1,39 @@
+svg {
+    background: #f7f7f7;
+}
+
+.line {
+    fill: none;
+    stroke: #2b8cbe;
+    stroke-width: 2px;
+}
+
+.area {
+    fill: #a6bddb;
+    stroke-width: 0;
+}
+
+.tick text {
+    font-size: 12px;
+}
+
+.tick line {
+    opacity: 0.2;
+}
+
+.grid .tick {
+    stroke: lightgrey;
+    opacity: 0.7;
+}
+
+.grid path {
+    stroke-width: 0;
+}
+
+.plot-title {
+    font-size: 24px;
+}
+
+.axis-title {
+    font-weight: bold;
+}

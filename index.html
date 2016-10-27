@@ -5,6 +5,8 @@
     <meta charset="utf-8">
     <title>Huizenmarkt Amsterdam</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <link rel="stylesheet" href="css/line-chart.css" type="text/css" />
+
     <!-- agile, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
     Download: http://zypopwebtemplates.com/License: Creative Commons Attribution//-->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
@@ -68,6 +70,8 @@
                     - Diagram ppm2/datum, diagram looptijd/datum <br>
                     - conclusie: signalen van oververhitting. <br>
                 </p>
+                <div id="plot-ppm2-tijd"></div>
+                <div id="plot-looptijd-tijd"></div>
             </article>
 
             <article id="vergelijking_steden">
@@ -180,6 +184,8 @@
 
     </section>
 
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="src/trend-lines.js"></script>
 
 </body>
 
