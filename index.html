@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/line-chart.css" type="text/css" />
     <link rel="stylesheet" href="css/choropleth.css" type="text/css" />
+    <link rel="stylesheet" href="css/tooltip.css" type="text/css" />
 
     <!-- agile, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
     Download: http://zypopwebtemplates.com/License: Creative Commons Attribution//-->
@@ -175,11 +176,18 @@
         <div class="clear"></div>
 
     </section>
+    
+    <div id="tooltip" class="hidden">
+        <p><strong>Wijk <span id="pc4">1016</span></strong></p>
+        <!--<p>Q1: <span id="q1_value">2343</span> euro</p>-->
+        <p>Median: <span id="mean_value"></span> euro</p>
+        <!--<p>Q3: <span id="q3_value">5205</span> euro</p>-->
+    </div>
 
     
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
     <script src="//d3js.org/d3.v3.min.js"></script>
-    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
+    <script src="src/lib/legend.js"></script>
     <script src="src/trend-lines.js"></script>
     <script src="//maps.google.com/maps/api/js"></script>
     <script src="src/choropleth.js"></script>

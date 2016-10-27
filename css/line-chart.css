@@ -1,5 +1,5 @@
 svg.line-chart{
-    background: #f7f7f7;
+    /*background: #f7f7f7;*/
 }
 
 .axis path,
@@ -24,7 +24,7 @@ svg.line-chart{
 }
 
 .tick line {
-    opacity: 0.2;
+    opacity: 0.4;
 }
 
 .grid .tick {
@@ -37,7 +37,7 @@ svg.line-chart{
 }
 
 .plot-title {
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .axis-title {

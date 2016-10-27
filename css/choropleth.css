@@ -3,6 +3,14 @@
     height: 400px;
 }
 
+#map-wrap div{
+    pointer-events: none;
+}
+
+#map-wrap svg{
+    pointer-events: visiblePainted;
+}
+
 .SvgOverlay {
     position: relative;
     width: 500px;
