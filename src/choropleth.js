@@ -176,9 +176,9 @@ var drawChoropleth = function() {
                     }
                     
                     var color = d3.scale.threshold()
-                                        .domain([2000, 3000, 4000, 5000, 6000])
+                                        .domain([3000, 4000, 5000, 6000])
                                         // .range(['#fee5d9', '#fcbba1','#fc9272','#fb6a4a','#de2d26','#a50f15'])
-                                        .range(['#ffffb2','#fed976','#feb24c','#fd8d3c','#f03b20','#bd0026']);
+                                        .range(['#ffffb2','#fecc5c','#fd8d3c','#f03b20','#bd0026']);
 
                     // var color = d3.scale.quantize()
                     //     .range(["rgb(255,255,178)", "rgb(254,204,92)", "rgb(253,141,60)", "rgb(240,59,32)", "rgb(189,0,38)"])

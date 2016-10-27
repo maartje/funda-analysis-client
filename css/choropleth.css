@@ -31,3 +31,7 @@
     /*fill: Orange;*/
     fill-opacity: .6;
 }
+
+.legendCells rect{
+    opacity: 0.6
+}
