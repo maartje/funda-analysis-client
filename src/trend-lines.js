@@ -29,16 +29,18 @@ d3.json("data/means_per_month.json", function(data) {
             return date;
         };
     
-        var xScale = d3.scaleTime()
+        var xScale = d3.time.scale()
             .domain([d3.min(dataset, getX), d3.max(dataset, getX)])
             .range([0, width]);
     
-        var xAxis = d3.axisBottom()
+        var xAxis = d3.svg.axis()
+            .orient("bottom")
             .scale(xScale)
-            .tickFormat(d3.timeFormat("%Y %b"));
+            .tickFormat(d3.time.format("%Y %b"));
     
         var make_x_axis = function() {
-            return d3.axisBottom()
+            return d3.svg.axis()
+                .orient("bottom")
                 .scale(xScale)
                 .ticks(dataset.length);
         };
@@ -61,21 +63,23 @@ d3.json("data/means_per_month.json", function(data) {
             };
         }
 
-        var yScale = d3.scaleLinear()
+        var yScale = d3.scale.linear()
             .domain([niceDomain().min, niceDomain().max])
             .range([height, 0]);
 
-        var yAxis = d3.axisLeft()
+        var yAxis = d3.svg.axis()
+            .orient("left")
             .scale(yScale)
             .ticks(5);
 
         var make_y_axis = function() {
-            return d3.axisLeft()
+            return d3.svg.axis()
+                .orient("left")
                 .scale(yScale)
                 .ticks(5);
         };
 
-        var line = d3.line()
+        var line = d3.svg.line()
             .x(function(d) {
                 return xScale(getX(d));
             })
@@ -83,7 +87,7 @@ d3.json("data/means_per_month.json", function(data) {
                 return yScale(getY(d));
             });
 
-        var area = d3.area()
+        var area = d3.svg.area()
             .x(function(d) {
                 return xScale(getX(d));
             })
@@ -93,6 +97,7 @@ d3.json("data/means_per_month.json", function(data) {
             });
 
         var svg = d3.select(selector).append("svg")
+            .attr("class", "line-chart")
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
             .append("g")

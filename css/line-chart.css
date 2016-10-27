@@ -1,5 +1,11 @@
-svg {
+svg.line-chart{
     background: #f7f7f7;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
 }
 
 .line {

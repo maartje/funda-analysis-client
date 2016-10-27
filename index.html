@@ -6,23 +6,11 @@
     <title>Huizenmarkt Amsterdam</title>
     <link rel="stylesheet" href="css/main.css" type="text/css" />
     <link rel="stylesheet" href="css/line-chart.css" type="text/css" />
+    <link rel="stylesheet" href="css/choropleth.css" type="text/css" />
 
     <!-- agile, a free CSS web template by ZyPOP (zypopwebtemplates.com/)
     Download: http://zypopwebtemplates.com/License: Creative Commons Attribution//-->
     <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-
-    <script type="text/javascript">
-    /*global $*/
-        $(function(){
-            $('#mainnav li').click(function(){
-                $('#mainnav li').removeClass("selected-item");
-                $(this).addClass("selected-item");
-            }); 
-        });
-    
-    </script>
 </head>
 
 <body>
@@ -39,7 +27,7 @@
 
             <nav id="mainnav">
                 <ul>
-                    <li class="selected-item"><a href="#vraagprijs_looptijd">Ontwikkeling Vraagprijs</a></li>
+                    <li><a href="#vraagprijs_looptijd">Ontwikkeling Vraagprijs</a></li>
                     <li><a href="#vergelijking_steden">Vergelijking Steden</a></li>
                     <li><a href="#prijzen_per_wijk">Prijzen per Wijk</a></li>
                     <li><a href="#historisch_perspectief">Historisch Perspectief</a></li>
@@ -101,6 +89,10 @@
                     - summary stats: duurste wijk, goedkoopste wijk, ...
                     - Conclusie: Zuid en grachtengordel zijn het duurst, goedkoper naarmate verder van centrum.  <br>
                 </p>
+                <div id="map-wrap">
+                    <div id="map">
+                    </div>
+                </div>
             </article>
             
             <article id="historisch_perspectief">
@@ -184,8 +176,29 @@
 
     </section>
 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
+    
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="//d3js.org/d3.v3.min.js"></script>
+    <!--<script src="https://d3js.org/d3.v4.min.js"></script>-->
     <script src="src/trend-lines.js"></script>
+    <script src="//maps.google.com/maps/api/js"></script>
+    <script src="src/choropleth.js"></script>
+    <script type="text/javascript">
+    /*global $*/
+        $(function(){
+            var hash = window.location.hash;
+            var link = hash?$("a[href='"+ hash +"']"):$("a[href='#vraagprijs_looptijd']");
+            link.parent().addClass("selected-item");
+            
+            $('#mainnav li').click(function(){
+                $('#mainnav li').removeClass("selected-item");
+                $(this).addClass("selected-item");
+            }); 
+            
+            drawChoropleth();
+        });
+    
+    </script>
 
 </body>
 

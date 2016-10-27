@@ -1,0 +1,25 @@
+#map {
+    width: 600px;
+    height: 400px;
+}
+
+.SvgOverlay {
+    position: relative;
+    width: 500px;
+    height: 500px;
+}
+
+.SvgOverlay svg {
+    position: absolute;
+    top: -4000px;
+    left: -4000px;
+    width: 8000px;
+    height: 8000px;
+}
+
+.SvgOverlay path {
+    stroke: #969696;
+    stroke-width: 1px;
+    /*fill: Orange;*/
+    fill-opacity: .6;
+}
