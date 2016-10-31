@@ -10,14 +10,20 @@ svg.line-chart{
 
 .line {
     fill: none;
-    stroke: #2b8cbe;
+    stroke: #bd0026; /*#2b8cbe*/
     stroke-width: 2px;
 }
 
-.area {
-    fill: #a6bddb;
-    stroke-width: 0;
+.point {
+    fill : #ffffff;
+    stroke : #bd0026;
+    stroke-width: 2px;
 }
+
+/*.area {*/
+/*    fill: #a6bddb;*/
+/*    stroke-width: 0;*/
+/*}*/
 
 .tick text {
     font-size: 12px;
@@ -37,7 +43,7 @@ svg.line-chart{
 }
 
 .plot-title {
-    font-size: 20px;
+    font-size: 22px;
 }
 
 .axis-title {

@@ -1,6 +1,12 @@
 #map {
     width: 600px;
     height: 400px;
+    margin-top: 20px
+}
+
+.plot-title{
+    width: 600px;
+    text-align: center
 }
 
 #map-wrap div{

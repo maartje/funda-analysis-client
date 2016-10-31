@@ -127,6 +127,24 @@ var drawChoropleth = function() {
             "color": "#a5d7e0"
         }]
     }];
+    
+    $("body").append(`    
+        <div id='choropleth-tooltip' class='hidden tooltip'>
+            <p><strong>Wijk <span id="pc4"></span></strong></p>
+            <p><span id="mean_value"></span>&nbsp;euro</p>
+        </div>`
+    );
+
+    $("#map-wrap").prepend("<div class='plot-title'>Vraagprijs per Vierkante Meter</div");
+
+    // var plotTitle = "Vraagprijs per Vierkante Meter";
+    // var width = 600;
+    // var margin_top = 50;
+    // d3.select("#map-wrap").prepend("text")
+    //     .attr("class", "plot-title")
+    //     .attr("text-anchor", "middle") // this makes it easy to centre the text as the transform is applied to the anchor
+    //     .attr("transform", "translate(" + (width / 2) + "," + (-0.5 * margin_top + 6) + ")") // centre below axis
+    //     .text(plotTitle);
 
     var $map = $("#map");
     var ams_dam_square = [4.8932, 52.373];
@@ -137,6 +155,15 @@ var drawChoropleth = function() {
         disableDefaultUI: true,
         styles: mapStyle
     });
+    
+    var svgLegend = d3.select("#map-wrap")
+                        .append("svg")
+                        .style("width", "100%")
+                        .append("g")
+                      .attr("transform", "translate(0,40)")
+                       .attr("class", "legend");
+
+    
     d3.json("data/amsterdam-pc4-simplified.json", function(geoJson) {
         var overlay = new google.maps.OverlayView();
         overlay.onAdd = function() {
@@ -188,18 +215,20 @@ var drawChoropleth = function() {
                     //         return parseFloat(d.ppm2);
                     //     })]);
 
+
+
                     adminDivisions.selectAll("path")
                         .data(geoJson.features)
                         .attr("d", path) // update existing paths
                         .enter().append("svg:path")
                         .attr("d", path)
-                        .on("mouseover", function(d, i, e) {
+                        .on("mouseover", function(d, i) {
 
                             var xPosition = d3.event.pageX; 
                             var yPosition = d3.event.pageY; 
 
 
-                            var tooltip = d3.select("#tooltip")
+                            var tooltip = d3.select("#choropleth-tooltip")
                                 .style("left", xPosition + "px")
                                 .style("top", yPosition + "px");
 
@@ -214,7 +243,7 @@ var drawChoropleth = function() {
                         .on("mouseout", function() {
 
                             //Hide the tooltip
-                            d3.select("#tooltip").classed("hidden", true);
+                            d3.select("#choropleth-tooltip").classed("hidden", true);
 
                         })
                         .style("fill", function(d, i) {
@@ -234,14 +263,7 @@ var drawChoropleth = function() {
                                              .cellHeight(25)
                                              .inputScale(color)
                                              .cellStepping(100);
-                    d3.select("#map-wrap")
-                        .append("svg")
-                        .style("width", "100%")
-                        .append("g")
-                      .attr("transform", "translate(0,40)")
-                       .attr("class", "legend")
-                       .call(horizontalLegend);
-
+                    svgLegend.call(horizontalLegend);
 
                 });
             };
