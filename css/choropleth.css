@@ -38,6 +38,6 @@
     fill-opacity: .6;
 }
 
-.legendCells rect{
+#map .legendCells rect{
     opacity: 0.6
 }

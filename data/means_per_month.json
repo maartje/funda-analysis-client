@@ -1,99 +1,227 @@
 {  
    "means":[  
-      {  
+      {
+         "gemeente" : "Amsterdam",
          "ppm2":3470.9782311403078,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":160.02547770700636,
          "verkoopdatum_maand":6.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3641.7929736035985,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":111.94811320754717,
          "verkoopdatum_maand":7.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3713.4025641661865,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":94.034068136272552,
          "verkoopdatum_maand":8.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3902.2588660857755,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":97.465979381443304,
          "verkoopdatum_maand":9.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3989.1643014909719,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":76.818502202643174,
          "verkoopdatum_maand":10.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3911.775544404039,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":89.95441030723488,
          "verkoopdatum_maand":11.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3973.2810983742152,
          "verkoopdatum_jaar":2015.0,
          "looptijd_in_dagen":89.762407602956699,
          "verkoopdatum_maand":12.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":3852.0204850293649,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":102.98656716417911,
          "verkoopdatum_maand":1.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4131.2089723275058,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":77.202339181286547,
          "verkoopdatum_maand":2.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4103.0323443624893,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":70.652875882946518,
          "verkoopdatum_maand":3.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4276.6263981962011,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":52.569444444444443,
          "verkoopdatum_maand":4.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4236.0202375851704,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":65.877083333333331,
          "verkoopdatum_maand":5.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4265.3171070967865,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":52.050224215246637,
          "verkoopdatum_maand":6.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4363.1709298656569,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":49.635969664138678,
          "verkoopdatum_maand":7.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4257.485884551551,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":54.344036697247709,
          "verkoopdatum_maand":8.0
       },
       {  
+         "gemeente" : "Amsterdam",
          "ppm2":4644.9129787768234,
          "verkoopdatum_jaar":2016.0,
          "looptijd_in_dagen":37.977464788732391,
+         "verkoopdatum_maand":9.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2279.5961355717454,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":80.5,
+         "verkoopdatum_maand":6.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2394.384701589715,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":217.85714285714286,
+         "verkoopdatum_maand":7.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":3217.3952658393864,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":129.875,
+         "verkoopdatum_maand":8.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2596.8995309577367,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":180.52173913043478,
+         "verkoopdatum_maand":9.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2862.1544571659592,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":157.57317073170731,
+         "verkoopdatum_maand":10.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2826.3781497067789,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":120.17052023121387,
+         "verkoopdatum_maand":11.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2756.3693270130498,
+         "verkoopdatum_jaar":2015.0,
+         "looptijd_in_dagen":124.10536044362291,
+         "verkoopdatum_maand":12.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2835.2319016301553,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":146.17910447761193,
+         "verkoopdatum_maand":1.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2928.6025711172665,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":117.45931758530183,
+         "verkoopdatum_maand":2.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2879.112874136576,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":136.89500000000001,
+         "verkoopdatum_maand":3.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2986.1239214264137,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":73.825396825396822,
+         "verkoopdatum_maand":4.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":3014.3204062014543,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":86.061111111111117,
+         "verkoopdatum_maand":5.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2959.5157480262005,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":78.960824742268045,
+         "verkoopdatum_maand":6.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":2896.9641324315912,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":81.068281938325995,
+         "verkoopdatum_maand":7.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":3120.748953472204,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":67.285285285285283,
+         "verkoopdatum_maand":8.0
+      },
+      {  
+         "gemeente" : "Utrecht",
+         "ppm2":3153.3780825997233,
+         "verkoopdatum_jaar":2016.0,
+         "looptijd_in_dagen":60.421455938697321,
          "verkoopdatum_maand":9.0
       }
    ]

@@ -10,13 +10,13 @@ svg.line-chart{
 
 .line {
     fill: none;
-    stroke: #bd0026; /*#2b8cbe*/
+/*    stroke: #bd0026;*/ 
     stroke-width: 2px;
 }
 
 .point {
     fill : #ffffff;
-    stroke : #bd0026;
+    /*stroke : #bd0026;*/
     stroke-width: 2px;
 }
 

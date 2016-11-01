@@ -50,7 +50,7 @@ d3.json("data/means_per_month_utrecht.json", function(data) {
             return d3.svg.axis()
                 .orient("bottom")
                 .scale(xScale)
-                .ticks(dataset.length);
+                // .ticks(dataset.length);
         };
 
         function niceDomain() {
