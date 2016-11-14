@@ -36,7 +36,9 @@ d3.json("data/means_per_month_amsterdam.json", function(data) {
     );
 });
 
-d3.json("data/means_per_month.json", function(data) {
+// https://funda-analysis-api-maartje.c9users.io/gemeente(amsterdam)/mean?$select=ppm2&$groupby=gemeente&$groupby=verkoopdatum_jaar&&$groupby=verkoopdatum_maand
+d3.json("data/means_per_month_cities.json", function(data) {
+// d3.json("data/means_per_month.json", function(data) {
     drawMultiTrendLineChart(
         data.means,
         function(d) {

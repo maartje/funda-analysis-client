@@ -51,50 +51,114 @@
 
                 <h2>Ontwikkeling van de Vraagprijs</h2>
                 <p>
-                    - lage hypotheekrente <br>
-                    - huizenprijzen in hele land stijgen <br>
-                    - in grote steden, met name Amsterdam, sprake van oververhitting <br>
-                    - kenmerken: snel stijgende prijzen, doorlijptijd heel laag <br>
-                    - Onderzoeksvraag: is de Amsterdamse woningmarkt oververhit? <br>
-                    - Diagram ppm2/datum, diagram looptijd/datum <br>
-                    - conclusie: signalen van oververhitting. <br>
+                    December 2016. De crisis op de huizenmarkt heeft zijn dieptepunt gehad in 2013
+                    en de hypotheekrente staat op een historisch laag niveau. In het hele land zijn
+                    de huizenprijzen langzaam weer aan het opkrabbelen. In de grote steden, met name 
+                    Amsterdam en Utrecht, wordt zelfs al gesproken van oververhitting. In deze sectie
+                    analyseren wij data van Funda over de periode 2015-2016 om te zien of wij 
+                    symptomen van oververhitting kunnen aanwijzen.
                 </p>
+                
+                <p>
+                    Oververhitting op de huizenmarkt kenmerkt zich door snel stijgende prijzen, 
+                    een korte looptijd en een hoog percentage huizen dat boven de vraagprijs 
+                    wordt verkocht. Om de mate van oververhitting in Amsterdam in de periode 2015-2016 
+                    te onderzoeken plotten wij de vraagprijs en de looptijd als functie van 
+                    de verkoopdatum voor de stad Amsterdam (postcode gebied 1000 tot 1100). 
+                    De resultaten zijn hieronder weergegeven. Omdat wij geen 
+                    gegevens hebben over de koopprijs kunnen wij helaas geen resultaten tonen
+                    over de hoogte van de koopprijs ten opzichte van de vraagprijs.
+                </p>
+
                 <div id="plot-ppm2-tijd"></div>
                 <div id="plot-looptijd-tijd"></div>
+
+                <p>
+                    De eerste grafiek toont de gemiddelde vraagprijs per vierkante meter
+                    uitgezet tegen de verkoopdatum. We zien een duidelijk stijgende lijn. 
+                    De gemiddelde vraagprijs per vierkante meter in juli 2015 bedraagt 
+                    <span id="ppm2_amsterdam_07_2015">3471</span> euro, in oktober 2016 
+                    is dit gestegen naar <span id="ppm2_amsterdam_10_2016">4645</span> euro.
+                    Dit is een stijging van <span id="ppm2_stijgings_percentage">34</span> procent
+                    over een periode van <span id="ppm2_stijgings_periode">15</span> maanden.
+
+                    De tweede grafiek toont de gemiddelde looptijd in dagen uitgezet tegen
+                    de verkoopdatum. We zien een duidelijk dalende lijn. De gemiddelde looptijd
+                    in juli 2015 bedraagt <span id="looptijd_amsterdam_07_2015">160</span> dagen,
+                    in oktober 2016 is dit gedaald naar <span id="looptijd_amsterdam_10_2016">38</span>
+                    dagen. Dit is een daling van <span id="looptijd_dalings_percentage">76</span> procent
+                    over een periode van <span id="looptijd_dalings_periode">15</span> maanden.
+                </p>
+
+                <p>
+                    Op basis van bovenstaande analyse concluderen we dat er inderdaad
+                    sprake is van oververhitting op de Amsterdamse huizenmarkt over de 
+                    periode 2015 - 2016.
+                </p>
+                
+                
             </article>
 
             <article id="vergelijking_steden">
 
                 <h2>Vergelijking tussen Steden</h2>
                 <p>
-                    - De prijzen in Amsterdam zijn met X procent gestegen  <br>
-                    - Hypothese 1: In het hele land stijgen de prijzen (einde crisis, lage rente)...  <br>
-                    - Hypothese 2: gentrificatie, globalisering ... Amsterdam populair  <br>
-                    - Onderzoeksvraag: is deze snelle prijsstijging specifiek voor Amsterdam  <br>
-                    - Diagram: ppm2/datum Amsterdam, Utrecht, Den Haag, Rotterdam  <br>
-                    - Conclusie: in alle steden stijgen de prijzen, maar snelle prijsstijging  <br>
-                      specifiek voor Amsterdam  <br>
+                    De huizen prijzen in Amsterdam zijn hard gestegen in de periode 2015 - 2016.
+                    Deze stijging kan deels verklaard worden door het einde van de financiele crisis 
+                    en de lage hypotheekrente. Ook kunnen factoren een rol spelen die specifiek zijn
+                    voor Amsterdam, bijvoorbeeld gentrificatie en de internationale aantrekkingskracht
+                    van de hoofdstad. In deze sectie onderzoeken wij Funda data van verschillende grote
+                    steden om te bepalen in welke mate de prijsstijging in Amsterdam toegeschreven kan
+                    worden aan factoren die specifiek zijn voor de Nederlandse hoofdstad.
+                </p>
+                <p>
+                    In onderstaande grafiek vergelijken we de prijsontwikkeling in Amsterdam met 
+                    de prijsontwikkeling in een aantal andere grote Nederlandse steden, 
+                    te weten: Rotterdam, Den Haag en Utrecht.
+                    De grafiek toont de gemiddelde vraagprijs per vierkante meter als 
+                    functie van de verkoopdatum voor bovengenoemde steden.
                 </p>
                 <div id="plot-ppm2-tijd-steden"></div>
+                <p>
+                    De grafiek toont dat de vraagprijzen gestegen zijn in alle 
+                    bovengenoemde steden. De prijsstijgingen bedragen respectievelijk
+                    17% (Amsterdam), 22% (Utrecht), 15% (Den Haag) en 12% (Rotterdam)
+                    voor de onderzochte periode Okt. 2015 - Nov 2016. 
+                </p>
+                <p>
+                    Op basis van bovenstaande analyse concluderen wij dat de gemiddelde vraagprijs 
+                    per vierkante meter ook in andere grote steden hard gestegen is. 
+                    Een interessant vervolg onderzoek zou zijn om de prijsontwikkeling in grote 
+                    steden te vergelijken met de prijsontwikkeling in kleinere gemeenten.
+                </p>
             </article>
 
             <article id="prijzen_per_wijk">
 
                 <h2>Prijzen per Wijk</h2>
                 <p>
-                    - Prijzen zijn sterk afhankelijk van locatie  <br>
-                    - Historisch gezien zijn Grachtengordel en Amsterdam Zuid de duurste wijken  <br>
-                    - algemeen: prijzen goedkoper naarmate verder van centrum  <br>
-                    - Onderzoeksvraag: Hoe varieert de vraagprijs over de geographische regionen?  <br>
-                    - Diagram: choropleth ppm2 in Amsterdam  <br>
-                    - Diagram: boxplot ppm2 per regio, i.e. centrum, zuid, ... 
-                    - summary stats: duurste wijk, goedkoopste wijk, ...
-                    - Conclusie: Zuid en grachtengordel zijn het duurst, goedkoper naarmate verder van centrum.  <br>
+                    Huizenprijzen zijn sterk afhankelijk van de locatie. Voor Amsterdam staan
+                    de grachtengordel en Amsterdam Zuid bekend als de duurste wijken. Daarnaast 
+                    geldt dat in het algemeen de prijzen lager liggen naarmate huizen verder verwijderd
+                    liggen van het centrum van de stad. In deze sectie analyseren wij hoe vraagprijzen
+                    varieren over geographische regionen.
+                    Onderstaande choropleth toont de gemiddelde vraagprijs per vierkante meter 
+                    voor alle 4-cijferige postcode gebieden van Amsterdam.
                 </p>
+
                 <div id="map-wrap">
-                    <div id="map">
+                     <div id="map">
                     </div>
                 </div>
+
+                <p>
+                    De getoonde postcode kaart laat zien dat Amsterdam Zuid, postcode gebied 1071, 
+                    de duurste wijk van Amsterdam is met een gemiddelde vierkante meter prijs van 6414 euro;
+                    direct gevolgd door de centrum wijken 1016 en 1017 met een vierkante meter prijs van 
+                    respectievelijk 6352 en 6103 euro. Ook geldt dat in het algemeen wijken goedkoper zijn
+                    naarmate ze verder van het centrum liggen. 
+                    De goedkoopste postcode gebieden liggen in Nieuw-West en in Amsterdam Noord. 
+                </p>
             </article>
             
             <article id="historisch_perspectief">
