@@ -28,9 +28,9 @@
 
             <nav id="mainnav">
                 <ul>
+                    <li><a href="#prijzen_per_wijk">Prijzen per Wijk</a></li>
                     <li><a href="#vraagprijs_looptijd">Ontwikkeling Vraagprijs</a></li>
                     <li><a href="#vergelijking_steden">Vergelijking Steden</a></li>
-                    <li><a href="#prijzen_per_wijk">Prijzen per Wijk</a></li>
                     <li><a href="#historisch_perspectief">Historisch Perspectief</a></li>
                     <br>
                     <hr>
@@ -45,6 +45,34 @@
 
         </aside>
         <section id="content" class="column-right">
+
+            <article id="prijzen_per_wijk">
+
+                <h2>Prijzen per Wijk</h2>
+                <p>
+                    Huizenprijzen zijn sterk afhankelijk van de locatie. Voor Amsterdam staan
+                    de grachtengordel en Amsterdam Zuid bekend als de duurste wijken. Daarnaast 
+                    geldt dat in het algemeen de prijzen lager liggen naarmate huizen verder verwijderd
+                    liggen van het centrum van de stad. In deze sectie analyseren wij hoe vraagprijzen
+                    varieren over geographische regionen.
+                    Onderstaande choropleth toont de gemiddelde vraagprijs per vierkante meter 
+                    voor alle 4-cijferige postcode gebieden van Amsterdam.
+                </p>
+
+                <div id="map-wrap">
+                     <div id="map">
+                    </div>
+                </div>
+
+                <p>
+                    De getoonde postcode kaart laat zien dat Amsterdam Zuid, postcode gebied 1071, 
+                    de duurste wijk van Amsterdam is met een gemiddelde vierkante meter prijs van 6414 euro;
+                    direct gevolgd door de centrum wijken 1016 en 1017 met een vierkante meter prijs van 
+                    respectievelijk 6352 en 6103 euro. Ook geldt dat in het algemeen wijken goedkoper zijn
+                    naarmate ze verder van het centrum liggen. 
+                    De goedkoopste postcode gebieden liggen in Nieuw-West en in Amsterdam Noord. 
+                </p>
+            </article>
 
             <article id="vraagprijs_looptijd">
 
@@ -133,33 +161,6 @@
                 </p>
             </article>
 
-            <article id="prijzen_per_wijk">
-
-                <h2>Prijzen per Wijk</h2>
-                <p>
-                    Huizenprijzen zijn sterk afhankelijk van de locatie. Voor Amsterdam staan
-                    de grachtengordel en Amsterdam Zuid bekend als de duurste wijken. Daarnaast 
-                    geldt dat in het algemeen de prijzen lager liggen naarmate huizen verder verwijderd
-                    liggen van het centrum van de stad. In deze sectie analyseren wij hoe vraagprijzen
-                    varieren over geographische regionen.
-                    Onderstaande choropleth toont de gemiddelde vraagprijs per vierkante meter 
-                    voor alle 4-cijferige postcode gebieden van Amsterdam.
-                </p>
-
-                <div id="map-wrap">
-                     <div id="map">
-                    </div>
-                </div>
-
-                <p>
-                    De getoonde postcode kaart laat zien dat Amsterdam Zuid, postcode gebied 1071, 
-                    de duurste wijk van Amsterdam is met een gemiddelde vierkante meter prijs van 6414 euro;
-                    direct gevolgd door de centrum wijken 1016 en 1017 met een vierkante meter prijs van 
-                    respectievelijk 6352 en 6103 euro. Ook geldt dat in het algemeen wijken goedkoper zijn
-                    naarmate ze verder van het centrum liggen. 
-                    De goedkoopste postcode gebieden liggen in Nieuw-West en in Amsterdam Noord. 
-                </p>
-            </article>
             
             <article id="historisch_perspectief">
 
@@ -167,6 +168,7 @@
                 <p>
                     - Conclusie: Prijzen zijn nog nooit zo hoog geweest...
                 </p>
+                <a href="http://www.huizenmarkt-zeepbel.nl/30-12-2008/de-herengracht-index/">De Herengracht Index</a>
                 <img src="http://www.huizenmarkt-zeepbel.nl/images/huizenprijzen_300jaar.jpg"></img>
             </article>
             
@@ -254,7 +256,7 @@
     /*global $*/
         $(function(){
             var hash = window.location.hash;
-            var link = hash?$("a[href='"+ hash +"']"):$("a[href='#vraagprijs_looptijd']");
+            var link = hash?$("a[href='"+ hash +"']"):$("a[href='#prijzen_per_wijk']");
             link.parent().addClass("selected-item");
             
             $('#mainnav li').click(function(){
